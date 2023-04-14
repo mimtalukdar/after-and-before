@@ -1,0 +1,44 @@
+.container{
+	width:50%;
+	margin:100px auto;
+	background:white;
+	padding:10px 25px;
+	
+}
+.container a{
+	text-decoration:none;
+	font-size:20px;
+	position:relative;
+	color:crimson;
+	padding:10px 15px;
+}
+.container a::before{
+	content:"";
+	position:absolute;
+	background:crimson;
+	width:15px;
+	height:2px;
+	right:-5px;
+	top:50%;
+
+}
+.container a::after{
+	content:"";
+	position:absolute;
+	background:crimson;
+	width:2px;
+	height:15px;
+	
+	top:35%;
+	right:2px;
+	transition:0.3s;
+	
+
+}
+.container a:hover::after{
+transform:rotate(-90deg);
+transform-origin:center;
+
+	
+
+}
